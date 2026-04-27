@@ -1,0 +1,91 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+locale: fr
+
+collections:
+  - name: "site"
+    label: "Site"
+    files:
+
+      - name: "identite"
+        label: "Identité & accroche"
+        file: "data.json"
+        fields:
+          - label: "Identité"
+            name: "identite"
+            widget: "object"
+            fields:
+              - { label: "Nom de l'entreprise", name: "nom", widget: "string" }
+              - { label: "Slogan (sous le logo)", name: "slogan", widget: "string" }
+              - { label: "Accroche hero", name: "accroche", widget: "string" }
+              - { label: "Tagline hero", name: "tagline", widget: "text" }
+              - { label: "Citation", name: "citation", widget: "string" }
+
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Adresse ligne 1", name: "adresse_ligne1", widget: "string" }
+              - { label: "Adresse ligne 2", name: "adresse_ligne2", widget: "string" }
+              - { label: "Adresse ligne 3", name: "adresse_ligne3", widget: "string" }
+              - { label: "Téléphone", name: "telephone", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Nom du responsable", name: "responsable_nom", widget: "string" }
+              - { label: "Titre du responsable", name: "responsable_titre", widget: "string" }
+
+          - label: "Chiffres clés"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Chiffre", name: "chiffre", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "ID (ne pas modifier)", name: "id", widget: "string" }
+              - { label: "Numéro", name: "num", widget: "string" }
+              - { label: "Nom du service", name: "nom", widget: "string" }
+              - { label: "Résumé (affiché sur la carte)", name: "resume", widget: "text" }
+              - { label: "Description longue (dans la modal)", name: "description", widget: "text" }
+              - label: "Couleur d'accent"
+                name: "accent"
+                widget: "select"
+                options: ["terra", "ciel", "mousse"]
+
+          - label: "Section Territoire"
+            name: "territoire"
+            widget: "object"
+            fields:
+              - { label: "Titre", name: "titre", widget: "string" }
+              - { label: "Texte", name: "corps", widget: "text" }
+              - label: "Points forts"
+                name: "points"
+                widget: "list"
+                fields:
+                  - { label: "Texte", name: "texte", widget: "string" }
+                  - label: "Couleur du bullet"
+                    name: "couleur"
+                    widget: "select"
+                    options: ["terra", "ciel", "mousse"]
+
+          - label: "Notre approche"
+            name: "approche"
+            widget: "object"
+            fields:
+              - label: "Étapes"
+                name: "etapes"
+                widget: "list"
+                fields:
+                  - { label: "Titre", name: "titre", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - label: "Couleur du numéro"
+                    name: "couleur"
+                    widget: "select"
+                    options: ["terra", "ciel", "mousse"]
