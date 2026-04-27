@@ -843,15 +843,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
-  window.addEventListener('load', function() {
-    if (window.location.hash && window.location.hash.indexOf('invite_token') !== -1) {
-      window.netlifyIdentity.open();
+  window.netlifyIdentity.on("init", function() {
+    var hash = window.location.hash;
+    if (hash && hash.indexOf("invite_token") !== -1) {
+      window.netlifyIdentity.open("invite");
     }
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on('login', function() {
-        document.location.href = '/admin/';
-      });
+    if (hash && hash.indexOf("recovery_token") !== -1) {
+      window.netlifyIdentity.open("recovery");
     }
+  });
+  window.netlifyIdentity.on("login", function() {
+    document.location.href = "/admin/";
   });
 </script>
 </body>
