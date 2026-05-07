@@ -26,18 +26,6 @@ collections:
               - { label: "Tagline hero", name: "tagline", widget: "text" }
               - { label: "Citation", name: "citation", widget: "string" }
 
-          - label: "Contact"
-            name: "contact"
-            widget: "object"
-            fields:
-              - { label: "Adresse ligne 1", name: "adresse_ligne1", widget: "string" }
-              - { label: "Adresse ligne 2", name: "adresse_ligne2", widget: "string" }
-              - { label: "Adresse ligne 3", name: "adresse_ligne3", widget: "string" }
-              - { label: "Téléphone", name: "telephone", widget: "string" }
-              - { label: "Email", name: "email", widget: "string" }
-              - { label: "Nom du responsable", name: "responsable_nom", widget: "string" }
-              - { label: "Titre du responsable", name: "responsable_titre", widget: "string" }
-
           - label: "Chiffres clés"
             name: "stats"
             widget: "list"
@@ -54,6 +42,7 @@ collections:
               - { label: "Nom du service", name: "nom", widget: "string" }
               - { label: "Résumé (affiché sur la carte)", name: "resume", widget: "text" }
               - { label: "Description longue (dans la modal)", name: "description", widget: "text" }
+              - { label: "Photo du service", name: "photo", widget: "image", required: false }
               - label: "Couleur d'accent"
                 name: "accent"
                 widget: "select"
@@ -99,3 +88,15 @@ collections:
                 name: "couleur"
                 widget: "select"
                 options: ["terra", "ciel", "mousse", "nuit"]
+
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Adresse ligne 1", name: "adresse_ligne1", widget: "string" }
+              - { label: "Adresse ligne 2", name: "adresse_ligne2", widget: "string" }
+              - { label: "Adresse ligne 3", name: "adresse_ligne3", widget: "string" }
+              - { label: "Téléphone", name: "telephone", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Nom du responsable", name: "responsable_nom", widget: "string" }
+              - { label: "Titre du responsable", name: "responsable_titre", widget: "string" }

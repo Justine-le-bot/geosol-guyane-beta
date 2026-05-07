@@ -760,7 +760,7 @@
     </div>
   </div>
   <div class="reveal" style="transition-delay:0.15s">
-    <form class="contact-form" name="contact-geosol" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/?success=true">
+    <form class="contact-form" name="contact-geosol" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contact-form">
       <input type="hidden" name="form-name" value="contact-geosol"/>
       <p style="display:none"><label>Ne pas remplir : <input name="bot-field"/></label></p>
       <div class="form-row">
@@ -955,14 +955,7 @@ var MODALS = {
 };
 
 document.addEventListener('DOMContentLoaded', function() {
-
-  // Netlify form success message
-  if (window.location.search.includes('success=true')) {
-    var form = document.querySelector('.contact-form');
-    if (form) {
-      form.innerHTML = '<div style="padding:2rem 0;"><p style="font-family:var(--font-serif);font-size:1.5rem;color:var(--vert-nuit);margin-bottom:1rem;">Message envoyé ✓</p><p style="font-size:0.95rem;font-weight:300;color:rgba(16,32,21,0.6);">Merci pour votre message. Nous reviendrons vers vous rapidement.</p></div>';
-    }
-  }
+}
 
   var overlay = document.getElementById('modalOverlay');
   var closeBtn = document.getElementById('modalCloseBtn');
@@ -1142,6 +1135,28 @@ document.addEventListener('DOMContentLoaded', function() {
     .catch(function(e) {
       console.warn('data.json non disponible en local, contenu statique affiché', e);
     });
+  </script>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var form = document.getElementById('contact-form');
+    if (!form) return;
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var data = new FormData(form);
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(data).toString()
+      })
+      .then(function() {
+        form.innerHTML = '<div style="padding:2rem 0;"><p style="font-family:var(--font-serif);font-size:1.5rem;color:var(--vert-nuit);margin-bottom:1rem;">Message envoyé ✓</p><p style="font-size:0.95rem;font-weight:300;color:rgba(16,32,21,0.6);">Merci pour votre message. Nous reviendrons vers vous rapidement.</p></div>';
+      })
+      .catch(function() {
+        alert('Une erreur est survenue. Veuillez réessayer.');
+      });
+    });
+  });
   </script>
 </body>
 </html>
