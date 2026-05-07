@@ -969,6 +969,14 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementById('modalTag').className = 'modal-tag ' + (d.tagClass || '');
       document.getElementById('modalTitle').textContent = d.title;
       document.getElementById('modalText').textContent = d.text;
+      var imgEl = document.getElementById('modalImg');
+      if (imgEl) {
+        if (d.photo && d.photo !== '') {
+          imgEl.innerHTML = '<img src="' + d.photo + '" alt="' + d.title + '" style="width:100%;height:240px;object-fit:cover;display:block;"/>';
+        } else {
+          imgEl.innerHTML = '<span>Photo à venir</span>';
+        }
+      }
       overlay.classList.add('open');
       document.body.style.overflow = 'hidden';
     });
