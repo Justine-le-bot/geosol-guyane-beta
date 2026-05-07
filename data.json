@@ -55,7 +55,7 @@
       "resume": "Ressources en eau souterraine et de surface. Forages, études d'impact et gestion durable.",
       "description": "La Guyane est l'un des territoires les plus riches en eau douce au monde. Geosol Guyane intervient sur la prospection hydrogéologique, l'implantation et le suivi de forages, les études d'impact sur les ressources hydriques et la gestion durable des nappes souterraines.",
       "accent": "ciel",
-      "photo": ""
+      "photo": "/images/p2.jpg"
     },
     {
       "id": "geotechnique",
@@ -64,7 +64,7 @@
       "resume": "Études de sol pour construction et infrastructure. Fondations adaptées aux conditions guyanaises.",
       "description": "Avant de construire, il faut comprendre ce qui est en dessous. Geosol Guyane réalise des études géotechniques de missions G1 à G5 pour des projets de bâtiments, routes, ouvrages d'art et aménagements divers.",
       "accent": "mousse",
-      "photo": ""
+      "photo": "/images/service-geologie.jpg"
     },
     {
       "id": "carto",
@@ -73,7 +73,7 @@
       "resume": "Cartes géologiques et thématiques. Données satellitaires, levés terrain et modélisation spatiale.",
       "description": "Nos équipes produisent des cartes géologiques, thématiques et d'aléas naturels à différentes échelles. Traitement et interprétation de données satellitaires, levés de terrain géoréférencés, modélisation numérique de terrain.",
       "accent": "terra",
-      "photo": ""
+      "photo": "/images/p2.jpg"
     },
     {
       "id": "rapports",
@@ -82,7 +82,7 @@
       "resume": "Livrables techniques et scientifiques adaptés à chaque interlocuteur.",
       "description": "Geosol Guyane rédige des rapports de reconnaissance, d'étude d'impact, d'expertise géologique et de synthèse bibliographique adaptés à chaque interlocuteur — technicien, décideur, investisseur ou organisme de contrôle.",
       "accent": "ciel",
-      "photo": ""
+      "photo": "/images/service-geologie.jpg"
     },
     {
       "id": "conseil",
@@ -91,7 +91,7 @@
       "resume": "Accompagnement stratégique de l'exploration à la mise en production.",
       "description": "Au-delà des études techniques, Geosol Guyane accompagne ses clients dans la durée — de la définition de la stratégie d'exploration jusqu'à la clôture du projet, en passant par la gestion des autorisations administratives et la coordination des intervenants terrain.",
       "accent": "mousse",
-      "photo": ""
+      "photo": "/images/p2.jpg"
     }
   ],
   "territoire": {
