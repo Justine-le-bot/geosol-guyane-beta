@@ -89,3 +89,13 @@ collections:
                     name: "couleur"
                     widget: "select"
                     options: ["terra", "ciel", "mousse"]
+
+          - label: "Bandeau CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Titre", name: "titre", widget: "string" }
+              - label: "Couleur du bandeau"
+                name: "couleur"
+                widget: "select"
+                options: ["terra", "ciel", "mousse", "nuit"]

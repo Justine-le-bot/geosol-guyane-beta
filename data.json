@@ -21,10 +21,22 @@
     "responsable_titre": "Managing Director"
   },
   "stats": [
-    { "chiffre": "15+", "label": "Années d'expertise terrain" },
-    { "chiffre": "3", "label": "Secteurs d'intervention" },
-    { "chiffre": "∞", "label": "Milliards d'années de géologie guyanaise" },
-    { "chiffre": "100%", "label": "Réponses ancrées dans le sol local" }
+    {
+      "chiffre": "15+",
+      "label": "Années d'expertise terrain"
+    },
+    {
+      "chiffre": "3",
+      "label": "Secteurs d'intervention"
+    },
+    {
+      "chiffre": "∞",
+      "label": "Milliards d'années de géologie guyanaise"
+    },
+    {
+      "chiffre": "100%",
+      "label": "Réponses ancrées dans le sol local"
+    }
   ],
   "services": [
     {
@@ -33,7 +45,8 @@
       "nom": "Géologie minière",
       "resume": "Prospection et évaluation de gisements minéraux. Or, terres rares, minéraux industriels.",
       "description": "Geosol Guyane réalise des missions de prospection et d'évaluation de gisements minéraux sur l'ensemble du territoire guyanais. Or alluvionnaire, or primaire, terres rares, minéraux industriels — chaque mission s'appuie sur une lecture rigoureuse du terrain, des levés géologiques détaillés, des analyses géochimiques et une cartographie précise des anomalies.",
-      "accent": "terra"
+      "accent": "terra",
+      "photo": ""
     },
     {
       "id": "hydrologie",
@@ -41,7 +54,8 @@
       "nom": "Hydrologie",
       "resume": "Ressources en eau souterraine et de surface. Forages, études d'impact et gestion durable.",
       "description": "La Guyane est l'un des territoires les plus riches en eau douce au monde. Geosol Guyane intervient sur la prospection hydrogéologique, l'implantation et le suivi de forages, les études d'impact sur les ressources hydriques et la gestion durable des nappes souterraines.",
-      "accent": "ciel"
+      "accent": "ciel",
+      "photo": ""
     },
     {
       "id": "geotechnique",
@@ -49,7 +63,8 @@
       "nom": "Géotechnique",
       "resume": "Études de sol pour construction et infrastructure. Fondations adaptées aux conditions guyanaises.",
       "description": "Avant de construire, il faut comprendre ce qui est en dessous. Geosol Guyane réalise des études géotechniques de missions G1 à G5 pour des projets de bâtiments, routes, ouvrages d'art et aménagements divers.",
-      "accent": "mousse"
+      "accent": "mousse",
+      "photo": ""
     },
     {
       "id": "carto",
@@ -57,7 +72,8 @@
       "nom": "Cartographie & SIG",
       "resume": "Cartes géologiques et thématiques. Données satellitaires, levés terrain et modélisation spatiale.",
       "description": "Nos équipes produisent des cartes géologiques, thématiques et d'aléas naturels à différentes échelles. Traitement et interprétation de données satellitaires, levés de terrain géoréférencés, modélisation numérique de terrain.",
-      "accent": "terra"
+      "accent": "terra",
+      "photo": ""
     },
     {
       "id": "rapports",
@@ -65,7 +81,8 @@
       "nom": "Rapports & expertise",
       "resume": "Livrables techniques et scientifiques adaptés à chaque interlocuteur.",
       "description": "Geosol Guyane rédige des rapports de reconnaissance, d'étude d'impact, d'expertise géologique et de synthèse bibliographique adaptés à chaque interlocuteur — technicien, décideur, investisseur ou organisme de contrôle.",
-      "accent": "ciel"
+      "accent": "ciel",
+      "photo": ""
     },
     {
       "id": "conseil",
@@ -73,26 +90,62 @@
       "nom": "Conseil & accompagnement",
       "resume": "Accompagnement stratégique de l'exploration à la mise en production.",
       "description": "Au-delà des études techniques, Geosol Guyane accompagne ses clients dans la durée — de la définition de la stratégie d'exploration jusqu'à la clôture du projet, en passant par la gestion des autorisations administratives et la coordination des intervenants terrain.",
-      "accent": "mousse"
+      "accent": "mousse",
+      "photo": ""
     }
   ],
   "territoire": {
     "titre": "Un territoire, une appartenance.",
     "corps": "La Guyane est un territoire d'une complexité géologique exceptionnelle. Son bouclier précambrien, ses forêts denses, ses fleuves puissants exigent une expertise locale rigoureuse. Geosol Guyane est né de ce territoire et pour ce territoire.",
     "points": [
-      { "texte": "Connaissance fine du terrain guyanais et de ses contraintes spécifiques", "couleur": "mousse" },
-      { "texte": "Réseau d'experts locaux et partenaires institutionnels établis", "couleur": "terra" },
-      { "texte": "Maîtrise des ressources hydriques et des zones humides amazoniennes", "couleur": "ciel" },
-      { "texte": "Respect des protocoles environnementaux et réglementations DREAL", "couleur": "mousse" },
-      { "texte": "Intervention rapide sur l'ensemble du territoire, littoral comme intérieur", "couleur": "terra" }
+      {
+        "texte": "Connaissance fine du terrain guyanais et de ses contraintes spécifiques",
+        "couleur": "mousse"
+      },
+      {
+        "texte": "Réseau d'experts locaux et partenaires institutionnels établis",
+        "couleur": "terra"
+      },
+      {
+        "texte": "Maîtrise des ressources hydriques et des zones humides amazoniennes",
+        "couleur": "ciel"
+      },
+      {
+        "texte": "Respect des protocoles environnementaux et réglementations DREAL",
+        "couleur": "mousse"
+      },
+      {
+        "texte": "Intervention rapide sur l'ensemble du territoire, littoral comme intérieur",
+        "couleur": "terra"
+      }
     ]
   },
   "approche": {
     "etapes": [
-      { "titre": "Écoute & cadrage", "description": "Chaque mission commence par comprendre votre contexte, vos contraintes et vos objectifs. Pas de réponse standard avant d'avoir posé les bonnes questions.", "couleur": "terra" },
-      { "titre": "Reconnaissance terrain", "description": "Descente en profondeur. Levés géologiques, prélèvements, mesures hydrologiques et géotechniques réalisés avec rigueur dans les conditions guyanaises.", "couleur": "mousse" },
-      { "titre": "Analyse & interprétation", "description": "Les données brutes deviennent une lecture. Analyses en laboratoire, traitement SIG, modélisation — la vérité du sol mise en forme pour décider.", "couleur": "ciel" },
-      { "titre": "Rapport & restitution", "description": "Un livrable clair, actionnable, adapté à votre interlocuteur — technicien, investisseur ou institutionnel. La science au service de la décision.", "couleur": "terra" }
+      {
+        "titre": "Écoute & cadrage",
+        "description": "Chaque mission commence par comprendre votre contexte, vos contraintes et vos objectifs. Pas de réponse standard avant d'avoir posé les bonnes questions.",
+        "couleur": "terra"
+      },
+      {
+        "titre": "Reconnaissance terrain",
+        "description": "Descente en profondeur. Levés géologiques, prélèvements, mesures hydrologiques et géotechniques réalisés avec rigueur dans les conditions guyanaises.",
+        "couleur": "mousse"
+      },
+      {
+        "titre": "Analyse & interprétation",
+        "description": "Les données brutes deviennent une lecture. Analyses en laboratoire, traitement SIG, modélisation — la vérité du sol mise en forme pour décider.",
+        "couleur": "ciel"
+      },
+      {
+        "titre": "Rapport & restitution",
+        "description": "Un livrable clair, actionnable, adapté à votre interlocuteur — technicien, investisseur ou institutionnel. La science au service de la décision.",
+        "couleur": "terra"
+      }
     ]
+  },
+  "cta": {
+    "titre": "Un projet géologique en Guyane ?",
+    "couleur": "terra"
   }
 }

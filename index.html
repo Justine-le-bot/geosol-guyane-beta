@@ -396,7 +396,7 @@
   <div class="hero-left">
     <!-- Logo grand format dans le hero -->
         <!-- Nom GEOSOL GUYANE en terra cotta, bien visible -->
-    <p class="hero-brand-name">GEOSOL &nbsp;·&nbsp; GUYANE</p>
+    <p class="hero-brand-name" id="hero-brand"></p>
 
     <p class="hero-eyebrow">Mineral Exploration Services</p>
     <h1 class="hero-title">
@@ -404,7 +404,7 @@
       <em>la terre</em><br/>
       écrit.
     </h1>
-    <p class="hero-tagline">Sous chaque surface, une histoire. Nous savons la lire. Études géologiques, minières et hydrologiques ancrées dans le territoire guyanais.</p>
+    <p class="hero-tagline" id="hero-tagline"></p>
     <div class="hero-actions">
       <a href="#services" class="btn-primary">Nos prestations</a>
       <a href="#contact" class="btn-ghost btn-ciel" style="border-color:var(--ciel);color:var(--ivoire) !important;background:var(--ciel);font-weight:600;" style="border-color:var(--ciel);color:var(--ivoire) !important;background:var(--ciel);">Prendre contact</a>
@@ -556,27 +556,23 @@
   <div class="reveal">
     <p class="intro-label">Notre identité</p>
     <h2 class="intro-title">GEO. SOL.<br/><em>Guyane.</em></h2>
-    <p class="intro-body">La Guyane repose sur l'un des plus vieux boucliers géologiques du monde. Sous la forêt, sous les latérites rouges, se cachent des strates qui ont traversé les âges. Ce territoire n'est pas un terrain à exploiter — c'est un livre ouvert pour qui sait le lire.</p>
+    <p class="intro-body" id="intro-body"></p>
     <div class="intro-quote">
-      <p>"Sous chaque surface, une histoire.<br/>Nous savons la lire."</p>
+      <p id="intro-citation"></p>
     </div>
   </div>
   <div class="intro-stats reveal" style="transition-delay:0.15s">
     <div class="stat-card">
-      <div class="stat-num">15+</div>
-      <div class="stat-label">Années d'expertise terrain</div>
+      <div class="stat-num" id="stat-0-num"></div><div class="stat-label" id="stat-0-label"></div>
     </div>
     <div class="stat-card">
-      <div class="stat-num">3</div>
-      <div class="stat-label">Secteurs d'intervention</div>
+      <div class="stat-num" id="stat-1-num"></div><div class="stat-label" id="stat-1-label"></div>
     </div>
     <div class="stat-card">
-      <div class="stat-num">∞</div>
-      <div class="stat-label">Milliards d'années de géologie guyanaise</div>
+      <div class="stat-num" id="stat-2-num"></div><div class="stat-label" id="stat-2-label"></div>
     </div>
     <div class="stat-card">
-      <div class="stat-num">100%</div>
-      <div class="stat-label">Réponses ancrées dans le sol local</div>
+      <div class="stat-num" id="stat-3-num"></div><div class="stat-label" id="stat-3-label"></div>
     </div>
   </div>
 </section>
@@ -606,8 +602,7 @@
       <div class="service-card accent-terra reveal" data-modal="geologie" role="button" tabindex="0">
         <div class="service-icon i-terra"><svg viewBox="0 0 24 24" fill="none" stroke="#EA764B" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M2 12h4M18 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div>
         <span class="service-num">01</span>
-        <h3 class="service-name">Géologie minière</h3>
-        <p class="service-desc">Prospection et évaluation de gisements minéraux. Or, terres rares, minéraux industriels.</p>
+        <h3 class="service-name" id="svc-geologie-name"></h3><p class="service-desc" id="svc-geologie-desc"></p>
         <span class="service-card-cta">En savoir plus <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
       </div>
 
@@ -615,8 +610,7 @@
       <div class="service-card accent-ciel reveal" style="transition-delay:0.1s" data-modal="hydrologie" role="button" tabindex="0">
         <div class="service-icon i-ciel"><svg viewBox="0 0 24 24" fill="none" stroke="#60A2D8" stroke-width="1.5"><path d="M12 22V8M5 12H2a10 10 0 0 0 20 0h-3"/><path d="M12 8a4 4 0 0 1 0-8 4 4 0 0 1 0 8"/></svg></div>
         <span class="service-num">02</span>
-        <h3 class="service-name">Hydrologie</h3>
-        <p class="service-desc">Ressources en eau souterraine et de surface. Forages, études d'impact et gestion durable.</p>
+        <h3 class="service-name" id="svc-hydrologie-name"></h3><p class="service-desc" id="svc-hydrologie-desc"></p>
         <span class="service-card-cta">En savoir plus <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
       </div>
 
@@ -624,8 +618,7 @@
       <div class="service-card accent-mousse reveal" style="transition-delay:0.2s" data-modal="geotechnique" role="button" tabindex="0">
         <div class="service-icon i-mousse"><svg viewBox="0 0 24 24" fill="none" stroke="#6D8357" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="m8 21 4-4 4 4"/><path d="M6 8h4M6 12h8"/></svg></div>
         <span class="service-num">03</span>
-        <h3 class="service-name">Géotechnique</h3>
-        <p class="service-desc">Études de sol pour construction et infrastructure. Fondations adaptées aux conditions guyanaises.</p>
+        <h3 class="service-name" id="svc-geotechnique-name"></h3><p class="service-desc" id="svc-geotechnique-desc"></p>
         <span class="service-card-cta">En savoir plus <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
       </div>
 
@@ -633,8 +626,7 @@
       <div class="service-card accent-terra reveal" style="transition-delay:0.1s" data-modal="carto" role="button" tabindex="0">
         <div class="service-icon i-terra"><svg viewBox="0 0 24 24" fill="none" stroke="#EA764B" stroke-width="1.5"><path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z"/><path d="m13 13 6 6"/></svg></div>
         <span class="service-num">04</span>
-        <h3 class="service-name">Cartographie & SIG</h3>
-        <p class="service-desc">Cartes géologiques et thématiques. Données satellitaires, levés terrain et modélisation spatiale.</p>
+        <h3 class="service-name" id="svc-carto-name"></h3><p class="service-desc" id="svc-carto-desc"></p>
         <span class="service-card-cta">En savoir plus <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
       </div>
 
@@ -642,8 +634,7 @@
       <div class="service-card accent-ciel reveal" style="transition-delay:0.2s" data-modal="rapports" role="button" tabindex="0">
         <div class="service-icon i-ciel"><svg viewBox="0 0 24 24" fill="none" stroke="#60A2D8" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
         <span class="service-num">05</span>
-        <h3 class="service-name">Rapports & expertise</h3>
-        <p class="service-desc">Livrables techniques et scientifiques adaptés à chaque interlocuteur : institutionnel, minier, environnemental.</p>
+        <h3 class="service-name" id="svc-rapports-name"></h3><p class="service-desc" id="svc-rapports-desc"></p>
         <span class="service-card-cta">En savoir plus <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
       </div>
 
@@ -651,8 +642,7 @@
       <div class="service-card accent-mousse reveal" style="transition-delay:0.3s" data-modal="conseil" role="button" tabindex="0">
         <div class="service-icon i-mousse"><svg viewBox="0 0 24 24" fill="none" stroke="#6D8357" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg></div>
         <span class="service-num">06</span>
-        <h3 class="service-name">Conseil & accompagnement</h3>
-        <p class="service-desc">Accompagnement stratégique de l'exploration à la mise en production ou la restitution environnementale.</p>
+        <h3 class="service-name" id="svc-conseil-name"></h3><p class="service-desc" id="svc-conseil-desc"></p>
         <span class="service-card-cta">En savoir plus <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
       </div>
 
@@ -689,7 +679,7 @@
     <div class="territory-content reveal" style="transition-delay:0.15s">
       <p class="intro-label">Ancrage local</p>
       <h3 class="intro-title" style="font-size:clamp(1.6rem,2.5vw,2.2rem)">Un territoire qui<br/><em>ne ressemble</em><br/>à aucun autre.</h3>
-      <p class="territory-body">La Guyane est un territoire d'une complexité géologique exceptionnelle. Son bouclier précambrien, ses forêts denses, ses fleuves puissants exigent une expertise locale rigoureuse. Geosol Guyane est né de ce territoire et pour ce territoire.</p>
+      <p class="territory-body" id="territoire-corps"></p>
       <ul class="territory-list">
         <li class="mousse">Connaissance fine du terrain guyanais et de ses contraintes spécifiques</li>
         <li class="ciel">Réseau d'experts locaux et partenaires institutionnels établis</li>
@@ -739,7 +729,7 @@
     </g>
   </svg>
   <div class="cta-band-inner reveal">
-    <h2>Un projet géologique<br/><em>en Guyane ?</em></h2>
+    <h2 id="cta-titre">Un projet géologique<br/><em>en Guyane ?</em></h2>
     <a href="#contact" class="btn-light">Parlons-en</a>
   </div>
 </div>
@@ -753,19 +743,19 @@
     <div style="margin-top:3rem">
       <div class="contact-detail">
         <span class="contact-detail-label">Adresse</span>
-        <span class="contact-detail-value">C/O Private Mail PM4Ibis<br/>20 rue Gilles Behary<br/>97300 Cayenne — France</span>
+        <span class="contact-detail-value" id="contact-adresse"></span>
       </div>
       <div class="contact-detail">
         <span class="contact-detail-label ciel">Téléphone</span>
-        <span class="contact-detail-value">+594 684 002 671</span>
+        <span class="contact-detail-value" id="contact-tel"></span>
       </div>
       <div class="contact-detail">
         <span class="contact-detail-label">Email</span>
-        <span class="contact-detail-value">geosol.guyane@gmail.com</span>
+        <span class="contact-detail-value" id="contact-email"></span>
       </div>
       <div class="contact-detail">
         <span class="contact-detail-label">Responsable</span>
-        <span class="contact-detail-value">Diego Seira, MSc<br/>Principal consultant</span>
+        <span class="contact-detail-value" id="contact-responsable"></span>
       </div>
     </div>
   </div>
@@ -1052,22 +1042,106 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   </script>
 
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script>
-  window.netlifyIdentity.on("init", function(user) {
-    if (!user) {
-      window.netlifyIdentity.on("login", function() {
-        document.location.href = "/admin/";
-      });
+  <!-- Netlify Identity Widget -->
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    window.netlifyIdentity.on("init", function(user) {
+      if (!user) {
+        window.netlifyIdentity.on("login", function() {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+
+    // Gérer le token d'invitation dans l'URL
+    var hash = window.location.hash;
+    if (hash && hash.indexOf("invite_token") > -1) {
+      window.netlifyIdentity.open("invite");
     }
-  });
-  var hash = window.location.hash;
-  if (hash && hash.indexOf("invite_token") > -1) {
-    window.netlifyIdentity.open("invite");
-  }
-  if (hash && hash.indexOf("recovery_token") > -1) {
-    window.netlifyIdentity.open("recovery");
-  }
-</script>
+    if (hash && hash.indexOf("recovery_token") > -1) {
+      window.netlifyIdentity.open("recovery");
+    }
+  </script>
+
+  <!-- Chargement dynamique depuis data.json -->
+  <script>
+  fetch('/data.json')
+    .then(function(r) { return r.json(); })
+    .then(function(d) {
+
+      // Hero
+      var hb = document.getElementById('hero-brand');
+      if (hb) hb.textContent = d.identite.nom.toUpperCase();
+      var ht = document.getElementById('hero-tagline');
+      if (ht) ht.textContent = d.identite.tagline;
+
+      // Intro
+      var ib = document.getElementById('intro-body');
+      if (ib) ib.textContent = d.territoire.corps;
+      var ic = document.getElementById('intro-citation');
+      if (ic) ic.textContent = d.identite.citation;
+
+      // Stats
+      d.stats.forEach(function(s, i) {
+        var n = document.getElementById('stat-' + i + '-num');
+        var l = document.getElementById('stat-' + i + '-label');
+        if (n) n.textContent = s.chiffre;
+        if (l) l.textContent = s.label;
+      });
+
+      // Services
+      d.services.forEach(function(s) {
+        var name = document.getElementById('svc-' + s.id + '-name');
+        var desc = document.getElementById('svc-' + s.id + '-desc');
+        if (name) name.textContent = s.nom;
+        if (desc) desc.textContent = s.resume;
+      });
+
+      // Territoire corps
+      var tc = document.getElementById('territoire-corps');
+      if (tc) tc.textContent = d.territoire.corps;
+
+      // Contact
+      var ca = document.getElementById('contact-adresse');
+      if (ca) ca.innerHTML = d.contact.adresse_ligne1 + '<br/>' + d.contact.adresse_ligne2 + '<br/>' + d.contact.adresse_ligne3;
+      var ct = document.getElementById('contact-tel');
+      if (ct) ct.textContent = d.contact.telephone;
+      var ce = document.getElementById('contact-email');
+      if (ce) ce.textContent = d.contact.email;
+      var cr = document.getElementById('contact-responsable');
+      if (cr) cr.innerHTML = d.contact.responsable_nom + '<br/>' + d.contact.responsable_titre;
+
+      // CTA couleur
+      var ctaBand = document.querySelector('.cta-band');
+      if (ctaBand && d.cta && d.cta.couleur) {
+        var couleurs = {
+          'terra': '#EA764B',
+          'ciel': '#60A2D8',
+          'mousse': '#6D8357',
+          'nuit': '#102015'
+        };
+        ctaBand.style.background = couleurs[d.cta.couleur] || '#EA764B';
+      }
+
+      // Modals - mise à jour textes depuis data.json
+      if (window.MODALS && d.services) {
+        d.services.forEach(function(s) {
+          if (window.MODALS[s.id]) {
+            window.MODALS[s.id].title = s.nom;
+            window.MODALS[s.id].text = s.description;
+            window.MODALS[s.id].tag = s.num + ' - ' + s.nom;
+            // Photo
+            if (s.photo) {
+              window.MODALS[s.id].photo = s.photo;
+            }
+          }
+        });
+      }
+
+    })
+    .catch(function(e) {
+      console.warn('data.json non disponible en local, contenu statique affiché', e);
+    });
+  </script>
 </body>
 </html>
