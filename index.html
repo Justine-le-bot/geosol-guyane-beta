@@ -1052,25 +1052,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   </script>
 
-  <!-- Netlify Identity Widget -->
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script>
-    window.netlifyIdentity.on("init", function(user) {
-      if (!user) {
-        window.netlifyIdentity.on("login", function() {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-
-    // Gérer le token d'invitation dans l'URL
-    var hash = window.location.hash;
-    if (hash && hash.indexOf("invite_token") > -1) {
-      window.netlifyIdentity.open("invite");
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  window.netlifyIdentity.on("init", function(user) {
+    if (!user) {
+      window.netlifyIdentity.on("login", function() {
+        document.location.href = "/admin/";
+      });
     }
-    if (hash && hash.indexOf("recovery_token") > -1) {
-      window.netlifyIdentity.open("recovery");
-    }
-  </script>
+  });
+  var hash = window.location.hash;
+  if (hash && hash.indexOf("invite_token") > -1) {
+    window.netlifyIdentity.open("invite");
+  }
+  if (hash && hash.indexOf("recovery_token") > -1) {
+    window.netlifyIdentity.open("recovery");
+  }
+</script>
 </body>
 </html>
